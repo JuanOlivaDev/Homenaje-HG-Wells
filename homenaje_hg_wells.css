@@ -1,0 +1,285 @@
+html {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+header {
+  background-color: rgb(13, 58, 13);
+  color: rgb(243, 234, 184);
+  padding: 10px 10px;
+  border: groove rgb(20, 31, 20) 5px;
+  border-radius: 7px;
+  text-align: center;
+}
+header h1 {
+  font-size: 4rem;
+  margin: 3rem 0 0;
+}
+
+body {
+  background-color: rgb(193, 204, 175);
+  margin: 0;
+}
+
+p {
+  text-indent: 2em;
+}
+
+.font-size-h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.subtitle-h2 {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.hgwells-div {
+  display: flex; /* Organiza imagen y texto en línea */
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio entre imagen y texto */
+  max-width: 100%; /* Evita que se salga del contenedor */
+}
+
+.hgwells-img {
+  max-width: 300px; /* Controla el ancho de la imagen */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  border: groove 4px rgb(232, 255, 226);
+  margin: 20px;
+}
+
+.indice {
+  width: 220px;
+  padding: 7px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.indice-contenido {
+  background: rgb(189, 206, 157);
+  border: 5px double rgb(140, 170, 140);
+  padding: 10px;
+}
+
+.indice h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #6c757d; /* Línea decorativa debajo */
+  padding-bottom: 5px;
+}
+
+.indice ol {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.indice a {
+  color: #2b5331;
+  text-decoration: none;
+  display: inline-block; /* Permite transformaciones */
+  transition: transform 0.15s ease;
+}
+
+.indice a:hover {
+  transform: scale(1.1); /* Ligero agrandamiento */
+  color: #1f8530;
+}
+
+.indice li {
+  margin-bottom: 5px;
+}
+
+#biografia,
+#obras-influyentes,
+#infancia,
+#juventud,
+#educacion,
+#trabajos,
+#influencias,
+#ultimos-dias {
+  scroll-margin-top: 50px; /* Ajusta según la altura de tu header/índice */
+}
+
+.contenido-principal {
+  flex: 1;
+  padding: 20px;
+}
+
+.contenido-principal p {
+  font-size: 20px;
+}
+
+.contenido-principal h3 {
+  font-size: 20px;
+}
+
+#biografia,
+#obras-influyentes,
+#enlaces {
+  background-color: rgb(189, 206, 157);
+  border-style: double;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: rgb(140, 170, 140);
+}
+
+.obras {
+  margin-bottom: 2rem;
+}
+
+.contenido-obra {
+  display: flex; /* Activa Flexbox */
+  gap: 20px; /* Espacio entre img y p */
+  align-items: flex-start; /* Alinea al inicio (evita desajustes) */
+}
+
+.contenido-obra img {
+  width: 200px; /* Ancho fijo para imágenes */
+  height: auto; /* Altura automática para mantener proporción */
+  object-fit: cover; /* Opcional: recorta la imagen para ajustarse */
+}
+
+.contenido-obra p {
+  flex: 1; /* Ocupa el espacio restante */
+  max-width: 400px;
+  margin: 0; /* Elimina márgenes por defecto */
+  font-size: 20px;
+  font-style: italic;
+}
+
+.obrasinfluyentes-div h3 img p {
+  display: flex; /* Organiza imagen y texto en línea */
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio entre imagen y texto */
+  max-width: 100%; /* Evita que se salga del contenedor */
+}
+
+.hgwells-p {
+  margin: 0; /* Elimina márgenes predeterminados del <p> */
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: justify;
+  padding: 1rem 4rem 2rem 2rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container p {
+  text-align: justify;
+}
+
+.obras-influyentes h3 ~ img {
+  width: 100px;
+  height: auto; /* Mantiene la proporción */
+  display: block; /* Evita espacios no deseados */
+}
+
+.obras-influyentes h2 {
+  margin-top: 3rem;
+}
+
+.enlaces-externos a {
+  color: #1764ca;
+  text-decoration: none;
+  padding-right: 18px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.enlaces-externos a::after {
+  content: "↗";
+  position: absolute;
+  margin-left: 5px;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+.enlaces-externos a:hover {
+  color: #14700c;
+  text-decoration: underline;
+}
+
+.enlaces-externos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Elimina el margen por defecto de <ul> */
+}
+
+.enlaces-externos li {
+  margin-bottom: 5px; /* Reduce el espacio entre items (antes era ~15-20px) */
+  line-height: 1; /* Compacta el interlineado */
+}
+
+.enlaces-externos h3 {
+  margin: 0; /* Elimina el margen por defecto de <h3> */
+  padding: 4px 0; /* Añade un pequeño padding vertical */
+  font-size: 1em; /* Opcional: tamaño de fuente estándar */
+}
+
+.enlaces-externos a:visited {
+  color: #6a0080; /* Morado oscuro (típico para visitados) */
+  font-style: italic; /* Opcional: añade cursiva */
+}
+
+footer {
+  background-color: rgb(13, 58, 13);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: rgb(243, 234, 184);
+  /* Bordes personalizados */
+  border-style: groove;
+  border-width: 5px 5px 5px 5px; /* Superior más grueso (8px) */
+  border-color: rgb(20, 31, 20) rgb(20, 31, 20) rgb(20, 31, 20) rgb(20, 31, 20);
+  border-radius: 5px;
+  /* Efecto de relieve mejorado */
+  border-top-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Luz artificial en el borde superior */
+  border-left-color: rgba(0, 0, 0, 0.3); /* Sombra en el lado izquierdo */
+}
+
+footer a {
+  color: #a7ee9e;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.footer-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+hr {
+  border: groove 3px rgb(22, 34, 22);
+  margin: 20px 20px;
+}
